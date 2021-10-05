@@ -1,0 +1,13 @@
+.body-style{
+    background-color: red;
+    color: white;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+}
+.box-style{
+    border-radius: 50%;
+    background-color: black;
+}

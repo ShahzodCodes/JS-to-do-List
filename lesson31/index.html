@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 31 </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header text-center bg-dark text-white">
+                    <h4>Add task</h4>
+                </div>
+                <div class="card-body">
+                    <form name="taskForm">
+                        <textarea cols="30" rows="3" name="task" class="form-control"></textarea>
+                        <input type="date" class="form-control" name="date">
+                        <button onclick="addTask()" type="button" class="btn btn-success mt-3 btn-block">
+                            Add task
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>TR</th>
+                    <th>Task</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+                <tbody id="taskList">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <button onmouseover="addStyle()" class="btn btn-success">
+                    add
+                </button>
+                    <button onmouseover="removeStyle()" class="btn btn-danger">
+                        remove
+                    </button>
+                </div>
+                <div class="card-body" id="click">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Distinctio illum ipsa minima, nostrum
+                    perspiciatis quia.
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div id="box"  onmouseleave="mouseLeave()" onmouseover="mouseOver()" class="box"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
